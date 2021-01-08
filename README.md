@@ -1,2 +1,2 @@
 # simple-resume-generator
-Simple resume generator powered by JavaScript
+You can fork this repository, change the JSON object defined in `resume.js` accordingly, and publish your own resume with this template.
