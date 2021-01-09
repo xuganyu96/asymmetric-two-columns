@@ -195,7 +195,7 @@ function createEmploymentHighlights(employment) {
     employment['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
         hlItem.innerHTML = hl 
-        hlItem.style.marginBlockEnd = '1rem'
+        hlItem.style.marginBlockEnd = '0.5rem'
         highlightCollection.appendChild(hlItem)
     })
 
@@ -312,7 +312,7 @@ function createProjectHighlights(project) {
     project['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
         hlItem.innerHTML = hl 
-        hlItem.style.marginBlockEnd = '1rem'
+        hlItem.style.marginBlockEnd = '0.5rem'
         highlightCollection.appendChild(hlItem)
     })
 
