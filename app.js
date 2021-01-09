@@ -366,7 +366,7 @@ function renderResumeBody(resume) {
     return resumeBody
 }
 
-function renderResume(resume) {
+function createResume(resume) {
     /*
     Given a resume JSON, render the entire resume. The rendering will take
     place in the following procedure
@@ -393,4 +393,26 @@ function renderResume(resume) {
     resumeContainer.appendChild(renderResumeBody(resume))
 
     return resumeContainer
+}
+
+
+function renderRemoteResume(resumeURL) {
+    fetch(resumeURL)
+    .then(resp => {
+        if(resp.ok) {
+            // If the response is okay, don't resolve just yet; we might still need to wait for data;
+            // return the json() method call, which itself is a Promise, and let it resolve on its own
+            return resp.json();
+        } else {
+            const errMsg = `${url} responded with status ${resp.status}`;
+            // reject(Error(errMsg));
+        }
+    })
+    .then(data => {
+      var resumeContainer = createResume(data);
+      document.body.appendChild(resumeContainer);
+    })
+    .catch(err => {
+        // reject(Error(err));
+    })
 }
