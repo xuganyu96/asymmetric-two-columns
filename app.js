@@ -196,7 +196,7 @@ function createEmploymentHighlights(employment) {
     highlightCollection.className = 'browser-default'
     employment['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
-        hlItem.innerHTML = hl 
+        hlItem.innerHTML = `<p>${hl}</p>`
         hlItem.style.marginBlockEnd = '0.5rem'
         highlightCollection.appendChild(hlItem)
     })
@@ -313,7 +313,7 @@ function createProjectHighlights(project) {
     highlightCollection.className = 'browser-default'
     project['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
-        hlItem.innerHTML = hl 
+        hlItem.innerHTML = `<p>${hl}</p>` 
         hlItem.style.marginBlockEnd = '0.5rem'
         highlightCollection.appendChild(hlItem)
     })
