@@ -94,7 +94,7 @@ function createSkillsSection(resume) {
         console.log(skill)
         skillSubsectionTitle = document.createElement('div')
         skillSubsectionTitle.className = "section-subtitle"
-        skillSubsectionTitle.innerText = skill['skill-type']
+        skillSubsectionTitle.innerHTML = skill['skill-type']
         
         skillSubsectionContainer = document.createElement('div')
         skillSubsectionContainer.className = 'skill-subsection-container'
@@ -102,7 +102,7 @@ function createSkillsSection(resume) {
 
         skill['skill-items'].forEach(function(skillItem){
             var skillItemContainer = document.createElement('div')
-            skillItemContainer.innerText = skillItem
+            skillItemContainer.innerHTML = skillItem
             skillSubsectionContainer.appendChild(skillItemContainer)
         })
 
