@@ -1,12 +1,16 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 ul {
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     padding-inline-start: 1.6rem;
+}
+
+li {
+    margin-block-end: 0.5rem;
 }
 
 .resume-container {
@@ -37,7 +41,7 @@ ul {
 .side-section-container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
     border-right: 2px solid #cccccc;
     padding-right: 8px;
 }
@@ -64,7 +68,7 @@ ul {
 .main-section-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 65%;
     padding-left: 8px;
 }
 
