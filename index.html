@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <!-- <script type="text/javascript" src="resume.js"></script> -->
+  <script type="text/javascript" src="resume.js"></script>
   <script src="app.js"></script>
 </head>
 
 <body>
   <script>
-    renderRemoteResume('https://xuganyu96.github.io/simple-resume-generator/resume.json')
+    var resumeContainer = createResume(resume);
+    document.body.appendChild(resumeContainer);
   </script>
 </body>
 </html>

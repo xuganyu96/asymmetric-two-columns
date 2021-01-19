@@ -1,5 +1,5 @@
-{
-    "resume-width": "50rem",
+resume = {
+    "resume-width": "60rem",
     "resume-header": {
         "full-name": "Ganyu (Bruce) Xu",
         "title": "Data Engineer",
@@ -13,29 +13,57 @@
     "resume-body": {
         "skills": [
             {
-                "skill-type": "Languages",
+                "skill-type": "Python",
                 "skill-items": [
-                    "Python", "SQL", "JavaScript", "Shell script",
-                    "HTML/CSS", "Go"
+                    "pandas",
+                    "Apache Airflow",
+                    "SQLAlchemy ORM",
+                    "unittest & pytest",
+                    "Flask & uWSGI",
+                    "Django",
+                    "Matplotlib",
                 ]
             },
             {
-                "skill-type": "Data",
+                "skill-type": "Cloud & serverless architecture",
                 "skill-items": [
-                    "MySQL, PostgreSQL", "Pandas", "Presto"
+                    "Docker", "DataDog", 
+                    "AWS Serverless"
                 ]
             },
             {
-                "skill-type": "Framework & Service",
+                "skill-type": "Database",
                 "skill-items": [
-                    "Apache Airflow", "Docker", "Flask", "Django", 
-                    "RabbitMQ"
+                    "SQLite",
+                    "MySQL & PostgreSQL",
+                    "Presto (AWS Athena)"
                 ]
             },
             {
-                "skill-type": "AWS Services",
+                "skill-type": "Developer tools",
                 "skill-items": [
-                    "EC2", "ECS", "Athena", "SQS", "S3", "Route 53"
+                    "Python debugger (pdb) for remote Python debugging",
+                    "curl for testing remote HTTP REST API",
+                    "git", "vim"
+                ]
+            },
+            {
+                "skill-type": "Frontend",
+                "skill-items": [
+                    "HTML 5 & CSS 3:</br> Flexbox, bootstrap, MaterializeCSS",
+                    "Vanilla JavaScript (ES5, ES6):</br> DOM manipulation, FetchAPI"
+                ]
+            },
+            {
+                "skill-type": "Distributed system architecture",
+                "skill-items": [
+                    "RabbitMQ", "Celery", "AWS SQS"
+                ]
+            },
+            {
+                "skill-type": "Hobbies & Interests",
+                "skill-items": [
+                    "Golang", "Java", "WebSocket", "NginX"
                 ]
             }
         ],
@@ -71,9 +99,12 @@
                     "aws": "http://chives-exchange.brucexu.live/auth/login",
                     "pypi": "https://pypi.org/project/chives-exchange/"
                 },
-                "tech-stack": ["Flask", "RabbitMQ", "MySQL", "Docker", "NginX"],
+                "tech-stack": ["Flask", "RabbitMQ", "MySQL", "Docker", "NginX", "ChartJS"],
                 "highlights": [
-                    "Electronic stock exchange with horizontally scalable order matching engines and Flask-powered web UI"
+                    "<b>Designed and implemented horizontally-scalable matching engine</b> that can run in a cluster to increase performance and reliability",
+                    "<b>Used Flask to provide web GUI</b> where users can create company, trade stocks, and even view stock charts",
+                    "<b>Deployed containerized services to AWS EC2</b> behind NginX reverse proxy for increased security and web performance",
+                    "Route network traffic through personal domain using <b>AWS Route 53</b>"
                 ]
             },
             {
@@ -81,9 +112,10 @@
                 "links": {
                     "github": "https://github.com/xuganyu96/PyArchive-legacy"
                 },
-                "tech-stack": ["Django", "WebSocket"],
+                "tech-stack": ["Django", "WebSocket", "AWS S3"],
                 "highlights": [
-                    "Hybrid file backup solution resilient against network failure"
+                    "Designed and implemented hybrid file backup solution resilient against network failure",
+                    "<b>Experimented with WebSocket</b> for script execution from web with real-time output"
                 ]
             },
             {
@@ -93,7 +125,7 @@
                 },
                 "tech-stack": ["Selenium"],
                 "highlights": [
-                    "Query large number of USCIS application statuses using multi-threaded workers each driving a headless Chrome session"
+                    "<b>Scripted multithreaded headless Chrome sessions</b> for querying large number of USCIS applications' status"
                 ]
             },
             {
@@ -104,8 +136,8 @@
                 },
                 "tech-stack": ["JavaScript", "HTML/CSS"],
                 "highlights": [
-                    "Laid out with HTML Flexbox and stylized using Materialize CSS",
-                    "Generated from JSON using vanilla JavaScript"
+                    "<b>Scripted JavaScipt app that renders pre-templated resume</b> from remote JSON object",
+                    "<b>Rendered the resume you are reading right now</b>"
                 ]
             }
         ]
