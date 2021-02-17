@@ -6,71 +6,55 @@ resume = {
         "contact-info": {
             "phone": "+1-626-327-8890",
             "email": "xuganyu96@gmail.com",
-            "linkedin": "/in/ganyu-bruce-xu-aa4b97112",
+            "linkedin": "/in/ganyu-bruce-xu/",
             "github": "xuganyu96"
         }
     },
     "resume-body": {
         "skills": [
             {
-                "skill-type": "Python",
+                "skill-type": "Data engineering",
                 "skill-items": [
-                    "pandas",
-                    "Apache Airflow",
+                    "<b>Python</b>",
+                    "<b>Apache Airflow</b>",
+                    "<b>pandas</b>",
                     "SQLAlchemy ORM",
-                    "unittest & pytest",
-                    "Flask & uWSGI",
-                    "Django",
-                    "Matplotlib",
+                    "Jupyter"
                 ]
             },
             {
-                "skill-type": "Cloud & serverless architecture",
+                "skill-type": "Cloud infrastructure",
                 "skill-items": [
-                    "Docker", "DataDog", 
-                    "AWS Serverless"
+                    "<b>Docker</b>", 
+                    "AWS EC2, S3, ECS",
+                    "DataDog"
                 ]
             },
             {
-                "skill-type": "Database",
+                "skill-type": "Database & data Warehouse",
                 "skill-items": [
-                    "SQLite",
-                    "MySQL & PostgreSQL",
-                    "Presto (AWS Athena)"
+                    "<b>AWS Athena</b>",
+                    "MySQL & PostgreSQL"
                 ]
             },
             {
-                "skill-type": "Developer tools",
+                "skill-type": "Web development",
                 "skill-items": [
-                    "Python debugger (pdb) for remote Python debugging",
-                    "curl for testing remote HTTP REST API",
-                    "git", "vim"
-                ]
-            },
-            {
-                "skill-type": "Frontend",
-                "skill-items": [
-                    "HTML 5 & CSS 3:</br> Flexbox, bootstrap, MaterializeCSS",
-                    "Vanilla JavaScript (ES5, ES6):</br> DOM manipulation, FetchAPI"
-                ]
-            },
-            {
-                "skill-type": "Distributed system architecture",
-                "skill-items": [
-                    "RabbitMQ", "Celery", "AWS SQS"
-                ]
-            },
-            {
-                "skill-type": "Hobbies & Interests",
-                "skill-items": [
-                    "Golang", "Java", "WebSocket", "NginX"
+                    "Flask & Django",
+                    "HTML 5 & CSS 3",
+                    "JavaScript ES6",
+                    "UNIX shell scripting",
+                    "Linux (Debian, CentOS)",
+                    "RabbitMQ", 
+                    "NginX",
+                    "Go"
                 ]
             }
         ],
         "education": [
             {
-                "school-name": "U of California, Berkeley",
-                "timeline": "Aug, 2015 - May, 2019",
+                "school-name": "UC Berkeley",
+                "timeline": "Aug 2015 - May 2019",
                 "highlights": [
                     "B.A. Mathematics", "B.A. Statistics", "GPA 3.464"
                 ]
@@ -83,11 +67,12 @@ resume = {
                 "employer": "LeanTaaS Inc.",
                 "location": "Santa Clara, CA",
                 "highlights": [
-                    "<b>Onboarded new customer</b> by coordinating with client IT staff to set up automated raw data extraction and scripting ETL pipeline in Airflow DAG",
-                    "<b>Shortened customer onboarding timeline from 12 to 4 weeks</b> by designing, implementing, and maintaining web app module that allowed client IT staff to independently verify raw data schema and data extraction script and reduced manual email exchanges between client IT and product managers",
-                    "<b>Reduced data error incidents and increased deployment confidence</b> by provisioning sandboxed environment that mirrored production infrastructure and configuration and enabled developers to perform end-to-end testing on ETL logic for individual git branches.",
-                    "<b>Increased production Airflow availability and reliability</b> by introducing DataDog for monitoring outage, notifying on-call engineers, and idenifying abnormal performance slowdown.",
-                    "<b>Experimented with fault-injection testing on production Airflow</b> and trained teammates on responding to production outage through simulated Airflow failures"
+                    "<b>Onboarded new customer totalling 90+ operating rooms and ~300k in annual revenue</b>",
+                    "<b>Shortened customer onboarding from 12 to 4 weeks</b> by automating raw data schema validation",
+                    "<b>Eliminated engineer-induced data incidents</b> by enabling data engineers to rapidly validate >40 ETL pipelines in sandboxed testing environment",
+                    "<b>Contributed to Airflow AWS executor</b> which launches Airflow task workers as serverless containers in AWS Elastic Container Service",
+                    "<b>Increased on-demand ETL service availability</b> by introducing DataDog for monitoring performance metrics and service outage",
+                    "<b>Halved production Airflow task scheduling wait time</b> after identifying performance bottleneck and resizing appropriate cloud infrastructure"
                 ]
             }
         ],
@@ -101,10 +86,8 @@ resume = {
                 },
                 "tech-stack": ["Flask", "RabbitMQ", "MySQL", "Docker", "NginX", "ChartJS"],
                 "highlights": [
-                    "<b>Designed and implemented horizontally-scalable matching engine</b> that can run in a cluster to increase performance and reliability",
-                    "<b>Used Flask to provide web GUI</b> where users can create company, trade stocks, and even view stock charts",
-                    "<b>Deployed containerized services to AWS EC2</b> behind NginX reverse proxy for increased security and web performance",
-                    "Route network traffic through personal domain using <b>AWS Route 53</b>"
+                    "Implemented stateless order matching engine that receives orders from RabbitMQ and writes transactions to SQL database",
+                    "Implemented web UI using Flask, featuring simple user authentication, simulated stock trading, and market information with interactive stock chart",
                 ]
             },
             {
@@ -114,30 +97,20 @@ resume = {
                 },
                 "tech-stack": ["Django", "WebSocket", "AWS S3"],
                 "highlights": [
-                    "Designed and implemented hybrid file backup solution resilient against network failure",
-                    "<b>Experimented with WebSocket</b> for script execution from web with real-time output"
-                ]
-            },
-            {
-                "title": "InquireUSCIS",
-                "links": {
-                    "github": "https://github.com/xuganyu96/InquireUSCIS"
-                },
-                "tech-stack": ["Selenium"],
-                "highlights": [
-                    "<b>Scripted multithreaded headless Chrome sessions</b> for querying large number of USCIS applications' status"
+                    "Implemented hybrid cloud file backup solution in which user uploads file through a web interface to a local caching device, which further backs up the file to AWS S3 in the background",
+                    "Achieved effective disaster recovery using multipart file upload/download such that large file transfer can be interrupted with minimal progress loss",
+                    "Integrated WebSocket into webserver and enabled admin users to execute custom Python script and receive real-time console output"
                 ]
             },
             {
                 "title": "Simple resume generator",
                 "links": {
-                    "github": "https://github.com/xuganyu96/simple-resume-generator",
-                    "pdf": "https://xuganyu96.github.io/resume.pdf"
+                    "github": "https://github.com/xuganyu96/simple-resume-generator"
                 },
                 "tech-stack": ["JavaScript", "HTML/CSS"],
                 "highlights": [
-                    "<b>Scripted JavaScipt app that renders pre-templated resume</b> from remote JSON object",
-                    "<b>Rendered the resume you are reading right now</b>"
+                    "Simplified resume writing using JavaScript and HTML for layout and templated JSON for content",
+                    "Rendered this resume that you are reading now"
                 ]
             }
         ]
