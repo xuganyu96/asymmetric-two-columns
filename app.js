@@ -34,10 +34,12 @@ function createContactInfoItem(href, iconClass, text) {
     /* Build from inside outward: icon, text, anchor, div */
     var icon = document.createElement('i')
     icon.className = iconClass 
+    var span = document.createElement('span')
+    span.innerText = text
     var anchor = document.createElement('a')
     anchor.setAttribute('href', href)
     anchor.appendChild(icon)
-    anchor.append(text)
+    anchor.appendChild(span)
     var contactInfoItem = document.createElement('div')
     contactInfoItem.className = 'contact-info-item'
     contactInfoItem.appendChild(anchor)
