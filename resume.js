@@ -1,8 +1,8 @@
 resume = {
-    "resume-width": "60rem",
+    "resume-width": "59rem",
     "resume-header": {
         "full-name": "Ganyu (Bruce) Xu",
-        "title": "Data Engineer",
+        "title": "Data Platform Engineer",
         "contact-info": {
             "phone": "+1-626-327-8890",
             "email": "xuganyu96@gmail.com",
@@ -67,10 +67,10 @@ resume = {
                 "employer": "LeanTaaS Inc.",
                 "location": "Santa Clara, CA",
                 "highlights": [
-                    "<b>Onboarded new customer totalling 90+ operating rooms and ~300k in annual revenue</b>",
-                    "<b>Shortened customer onboarding from 12 to 4 weeks</b> by automating raw data schema validation",
-                    "<b>Eliminated engineer-induced data incidents</b> by enabling data engineers to rapidly validate >40 ETL pipelines in sandboxed testing environment",
-                    "<b>Contributed to Airflow AWS executor</b> which launches Airflow task workers as serverless containers in AWS Elastic Container Service",
+                    "<b>Onboarded new customer worth more than $300k in annual revenue</b>",
+                    "<b>Shortened customer onboarding from 12 to 4 weeks</b> by building horizontically scalable backend microservice that automates raw data schema validation",
+                    "<b>Accelerated development cycle</b> by provisioning on-demand AWS infrastructure that enables developers to validate individual git branches in sandboxed testing environment",
+                    "<b>Maximized Airflow task concurrency (up to 2000)</b> by contributing to and applying in-house Airflow Fargate executor plugin",
                     "<b>Increased on-demand ETL service availability</b> by introducing DataDog for monitoring performance metrics and service outage",
                     "<b>Halved production Airflow task scheduling wait time</b> after identifying performance bottleneck and resizing appropriate cloud infrastructure"
                 ]

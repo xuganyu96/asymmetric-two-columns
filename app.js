@@ -213,7 +213,7 @@ function createEmploymentHighlights(employment) {
 function createEmploymentSection(resume) {
     var employmentSectionTitle = document.createElement('div')
     employmentSectionTitle.className = 'section-title'
-    employmentSectionTitle.innerText = 'Employments'
+    employmentSectionTitle.innerText = 'Experience'
 
     var employmentSectionContainer = document.createElement("div")
     employmentSectionContainer.className = 'employment-section-container'
