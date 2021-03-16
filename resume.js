@@ -70,6 +70,7 @@ resume = {
                     "<b>Onboarded new customer worth more than $300k in annual revenue</b>",
                     "<b>Shortened customer onboarding from 12 to 4 weeks</b> by building horizontically scalable backend microservice that automates raw data schema validation",
                     "<b>Accelerated development cycle</b> by provisioning on-demand AWS infrastructure that enables developers to validate individual git branches in sandboxed testing environment",
+                    "<b>Automated unit testing</b> by integrating pytest into deployment pipeline",
                     "<b>Maximized Airflow task concurrency (up to 2000)</b> by contributing to and applying in-house Airflow Fargate executor plugin",
                     "<b>Increased on-demand ETL service availability</b> by introducing DataDog for monitoring performance metrics and service outage",
                     "<b>Halved production Airflow task scheduling wait time</b> after identifying performance bottleneck and resizing appropriate cloud infrastructure"
