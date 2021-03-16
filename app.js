@@ -333,6 +333,7 @@ function createProjectSection(resume) {
     projectSectionTitle.innerText = "Software Engineering Projects"
 
     var projectSectionContainer = document.createElement("div")
+    projectSectionContainer.className = 'project-section-container'
     projectSectionContainer.appendChild(projectSectionTitle)
 
     resume['resume-body']['projects'].forEach(function(project){
