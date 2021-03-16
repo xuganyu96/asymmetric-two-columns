@@ -1,5 +1,5 @@
 resume = {
-    "resume-width": "59rem",
+    "resume-width": "60rem",
     "resume-header": {
         "full-name": "Ganyu (Bruce) Xu",
         "title": "Data Platform Engineer",
