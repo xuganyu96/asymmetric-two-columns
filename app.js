@@ -129,10 +129,11 @@ function createEducationSection(resume) {
         console.log(education)
         educationSubsectionTitle = document.createElement('div')
         educationSubsectionTitle.className = "section-subtitle"
-        educationSubsectionTitle.innerText = education['school-name']
+        educationSubsectionTitle.innerHTML = `<span>${education['school-name']}</span>`
 
         educationSubsectionTimeline = document.createElement('div')
-        educationSubsectionTimeline.innerText = education['timeline']
+        educationSubsectionTimeline.className = 'education-item-container'
+        educationSubsectionTimeline.innerHTML = `<span>${education['timeline']}</span>`
         
         educationSubsectionContainer = document.createElement('div')
         educationSubsectionContainer.className = 'education-subsection-container'
@@ -141,7 +142,8 @@ function createEducationSection(resume) {
 
         education['highlights'].forEach(function(highlight){
             highlightContainer = document.createElement('div')
-            highlightContainer.innerText = highlight 
+            highlightContainer.innerHTML = `<span>${highlight}</span>`
+            highlightContainer.className = 'education-item-container'
             educationSubsectionContainer.appendChild(highlightContainer)
         })
 
