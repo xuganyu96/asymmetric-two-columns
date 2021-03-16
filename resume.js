@@ -1,8 +1,8 @@
 resume = {
-    "resume-width": "60rem",
+    "resume-width": "58rem",
     "resume-header": {
         "full-name": "Ganyu (Bruce) Xu",
-        "title": "Data Platform Engineer",
+        "title": "Software Engineer, Data Platform",
         "contact-info": {
             "phone": "+1-626-327-8890",
             "email": "xuganyu96@gmail.com",
@@ -31,7 +31,7 @@ resume = {
                 ]
             },
             {
-                "skill-type": "Database & data Warehouse",
+                "skill-type": "Database & DWH",
                 "skill-items": [
                     "<b>AWS Athena</b>",
                     "MySQL & PostgreSQL"

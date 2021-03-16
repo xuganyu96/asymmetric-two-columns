@@ -37,6 +37,7 @@ function createContactInfoItem(href, iconClass, text) {
     var span = document.createElement('span')
     span.innerText = text
     var anchor = document.createElement('a')
+    anchor.className = 'contact-anchor'
     anchor.setAttribute('href', href)
     anchor.appendChild(icon)
     anchor.appendChild(span)
@@ -199,7 +200,7 @@ function createEmploymentHighlights(employment) {
     employment['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
         hlItem.innerHTML = `<p>${hl}</p>`
-        hlItem.style.marginBlockEnd = '0.5rem'
+        hlItem.className = 'highlight-item'
         highlightCollection.appendChild(hlItem)
     })
 
@@ -316,7 +317,7 @@ function createProjectHighlights(project) {
     project['highlights'].forEach(function(hl){
         var hlItem = document.createElement('li')
         hlItem.innerHTML = `<p>${hl}</p>` 
-        hlItem.style.marginBlockEnd = '0.5rem'
+        hlItem.className = 'highlight-item'
         highlightCollection.appendChild(hlItem)
     })
 
@@ -399,7 +400,6 @@ function createResume(resume) {
 
     return resumeContainer
 }
-
 
 function renderRemoteResume(resumeURL) {
     fetch(resumeURL)
