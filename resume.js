@@ -18,7 +18,7 @@ resume = {
                     "<b>Python 3</b>",
                     "<b>Apache Airflow</b>",
                     "<b>pandas</b>",
-                    "Big-data analytics with<br><b>S3 + Parquet + Athena</b>",
+                    "Data warehousing with<br><b>S3 + Parquet + Athena</b>",
                 ]
             },
             {
@@ -68,13 +68,15 @@ resume = {
                 "location": "Santa Clara, CA",
                 "highlights": [
                     // WakeMed ~600k, Woman's Hospital ~180K, Mount Nittany ~387k
-                    "<b>Converted $1.1M+ contract into annual revenue</b> through ETL implementation",
+                    "<b>Converted $1.1M+ contract into annual revenue</b> by implementing ETL pipeline from EHR backend database to internal analytics warehouse",
+                    // Athena
+                    "<b>Scaled raw data ingestation throughput</b> by migrating data storage from PostgreSQL to Apache Parquet on AWS S3 and AWS Athena",
                     // File validation worker
-                    "<b>Accelerated ETL implementation process from 12 to 4 weeks</b> by building scalable backend microservice that automates data schema validation",
+                    "<b>Shortened ETL implementation process from 12 to 4 weeks</b> by building scalable backend microservice that automates data schema validation",
                     // Branch build
-                    "<b>Scaled regression testing infrastructure</b> by replacing local worker processes with container clusters on AWS ECS",
-                    // Automated unit tests
-                    "<b>Built the first version of unit testing automation</b>",
+                    "<b>Expanded regression testing infrastructure</b> by migrating testing environment from a single EC2 instance to container clusters on AWS ECS",
+                    // Unit testing
+                    "<b>Automated unit testing</b> by integrating pytest into deployment pipeline",
                     // DataDog for Airflow monitoring
                     "<b>Increased on-demand ETL service availability</b> by implementing service availability monitoring (DataDog) and engineer on-call alarms (PagerDuty)",
                     // Epic block utilization, CHS PICIS R&D, Meditech Expanse R&D
