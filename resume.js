@@ -113,7 +113,7 @@ resume = {
                     "Simulated order matching algorithms that pair stock orders and execute trade",
                     "Leveraged relational constraints in data model to resolve race conditions and achieve horizontal scalability for the order matching algorithm",
                     "Implemented web client (Flask) featuring simple user authentication, simulated stock trading, and market data visualization (ChartJS)",
-                    "Published to AWS on EC2 behind load balancer under personal domain"
+                    "Published to AWS on EC2 with self-hosted MySQL, NginX, and RabbitMQ; traffic routed under personal domain (GoDaddy) through AWS Route53"
                 ]
             },
             // {
@@ -135,8 +135,8 @@ resume = {
                 },
                 "tech-stack": ["JavaScript", "HTML/CSS"],
                 "highlights": [
-                    "A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a single-page application design hosted on GitHub Pages",
-                    "<b>This resume you are reading is created using this project</b>"
+                    "A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a single-page application design",
+                    "<b>This resume you are reading was created using this project</b>, with a single HTML page that loads the resume-rendering app and content from GitHub Pages"
                 ]
             }
         ]

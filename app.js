@@ -246,6 +246,7 @@ function createProjectTitleLinks(project) {
     var title = document.createElement('div')
     title.className = 'section-subtitle'
     title.style.flexGrow = '1'
+    title.style.marginBottom = "0.2rem"
     title.innerText = project['title']
 
     var titleLinks = document.createElement('div')
@@ -349,7 +350,7 @@ function createProjectSection(resume) {
         var projectContainer = document.createElement('div')
         projectContainer.className = 'project-subsection-container'
         projectContainer.appendChild(titleLinks)
-        projectContainer.appendChild(techStack)
+        // projectContainer.appendChild(techStack)
         projectContainer.appendChild(highlights)
 
         projectSectionContainer.appendChild(projectContainer)
