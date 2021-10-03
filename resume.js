@@ -80,7 +80,9 @@ resume = {
                     // DataDog for Airflow monitoring
                     "<b>Increased on-demand ETL service availability</b> by implementing service availability monitoring (DataDog) and engineer on-call alarms (PagerDuty)",
                     // Epic block utilization, CHS PICIS R&D, Meditech Expanse R&D
-                    "<b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendorts such as Epic, Meditech, and Picis"
+                    "<b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendorts such as Epic, Meditech, and Picis",
+                    // Managerial achievements
+                    "Led a team of 8+ data engineers, providing mentorship for junior members while carrying out product vision from business and engineering leadership"
                 ]
             }
         ],
@@ -128,8 +130,8 @@ resume = {
                 },
                 "tech-stack": ["JavaScript", "HTML/CSS"],
                 "highlights": [
-                    "Simplified resume writing using JavaScript and HTML for layout and templated JSON for content",
-                    "Rendered this resume that you are reading now"
+                    "A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a single-page application design hosted on GitHub Pages",
+                    "<b>This resume you are reading is created using this project</b>"
                 ]
             }
         ]
