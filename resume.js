@@ -36,19 +36,16 @@ resume = {
             {
                 "skill-type": "Web development",
                 "skill-items": [
-                    "Web frameworks:<br>"
-                    + "<b>Flask</b>, Django</br>",
-                    "Relational databases:<br>"
-                    + "<b>MySQL, PostgreSQL</b><br>"
-                    + "SQLAlchemy",
+                    "<b>Flask</b>",
+                    "<b>MySQL, PostgreSQL</b><br>",
+                    "SQLAlchemy",
                     "HTML, CSS, JavaScript"
                 ]
             },
             {
                 "skill-type": "Miscellaneous",
                 "skill-items": [
-                    "C language",
-                    "Golang",
+                    "C, Go",
                     "Shell scripting",
                     "Vim"
                 ]
