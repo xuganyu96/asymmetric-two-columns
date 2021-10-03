@@ -67,13 +67,18 @@ resume = {
                 "employer": "LeanTaaS Inc.",
                 "location": "Santa Clara, CA",
                 "highlights": [
-                    "<b>Onboarded new customer worth more than $300k in annual revenue</b>",
-                    "<b>Shortened customer onboarding from 12 to 4 weeks</b> by building horizontically scalable backend microservice that automates raw data schema validation",
-                    "<b>Accelerated development cycle</b> by provisioning on-demand AWS infrastructure that enables developers to validate individual git branches in sandboxed testing environment",
-                    "<b>Automated unit testing</b> by integrating pytest into deployment pipeline",
-                    "<b>Maximized Airflow task concurrency (up to 2000)</b> by contributing to and applying in-house Airflow Fargate executor plugin",
-                    "<b>Increased on-demand ETL service availability</b> by introducing DataDog for monitoring performance metrics and service outage",
-                    "<b>Halved production Airflow task scheduling wait time</b> after identifying performance bottleneck and resizing appropriate cloud infrastructure"
+                    // WakeMed ~600k, Woman's Hospital ~180K, Mount Nittany ~387k
+                    "<b>Converted $1.1M+ contract into annual revenue</b> through ETL implementation",
+                    // File validation worker
+                    "<b>Accelerated ETL implementation process from 12 to 4 weeks</b> by building scalable backend microservice that automates data schema validation",
+                    // Branch build
+                    "<b>Scaled regression testing infrastructure</b> by replacing local worker processes with container clusters on AWS ECS",
+                    // Automated unit tests
+                    "<b>Built the first version of unit testing automation</b>",
+                    // DataDog for Airflow monitoring
+                    "<b>Increased on-demand ETL service availability</b> by implementing service availability monitoring (DataDog) and engineer on-call alarms (PagerDuty)",
+                    // Epic block utilization, CHS PICIS R&D, Meditech Expanse R&D
+                    "<b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendorts such as Epic, Meditech, and Picis"
                 ]
             }
         ],
