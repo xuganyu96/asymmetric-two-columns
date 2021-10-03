@@ -84,6 +84,18 @@ resume = {
         ],
         "projects": [
             {
+                "title": "AWS ECS/Fargate Executor for Apache Airflow",
+                "links": {
+                    "github": "https://github.com/aelzeiny/airflow-aws-executors",
+                    "pypi": "https://pypi.org/project/airflow-aws-executors/"
+                },
+                "tech-stack": ["AWS ECS/Fargate", "Apache Airflow"],
+                "highlights": [
+                    "Reduced server maintenance overhead and monetary cost from idle worker instances by leveraging serverless container deployment on AWS Fargate",
+                    "Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling solution, such as with the Celery Executor"
+                ]
+            },
+            {
                 "title": "Chives exchange",
                 "links": {
                     "github": "https://github.com/xuganyu96/chives-exchange",
@@ -95,18 +107,18 @@ resume = {
                     "Implemented web UI using Flask, featuring simple user authentication, simulated stock trading, and market information with interactive stock chart",
                 ]
             },
-            {
-                "title": "PyArchive",
-                "links": {
-                    "github": "https://github.com/xuganyu96/PyArchive-legacy"
-                },
-                "tech-stack": ["Django", "WebSocket", "AWS S3"],
-                "highlights": [
-                    "Implemented hybrid cloud file backup solution in which user uploads file through a web interface to a local caching device, which further backs up the file to AWS S3 in the background",
-                    "Achieved effective disaster recovery using multipart file upload/download such that large file transfer can be interrupted with minimal progress loss",
-                    "Integrated WebSocket into webserver and enabled admin users to execute custom Python script and receive real-time console output"
-                ]
-            },
+            // {
+            //     "title": "PyArchive",
+            //     "links": {
+            //         "github": "https://github.com/xuganyu96/PyArchive-legacy"
+            //     },
+            //     "tech-stack": ["Django", "WebSocket", "AWS S3"],
+            //     "highlights": [
+            //         "Implemented hybrid cloud file backup solution in which user uploads file through a web interface to a local caching device, which further backs up the file to AWS S3 in the background",
+            //         "Achieved effective disaster recovery using multipart file upload/download such that large file transfer can be interrupted with minimal progress loss",
+            //         "Integrated WebSocket into webserver and enabled admin users to execute custom Python script and receive real-time console output"
+            //     ]
+            // },
             {
                 "title": "Simple resume generator",
                 "links": {
