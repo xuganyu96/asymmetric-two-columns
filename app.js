@@ -89,20 +89,20 @@ function createSkillsSection(resume) {
     skillsSectionTitle.className = 'section-title'
     skillsSectionTitle.innerText = 'Skills'
 
-    var skillsSection = document.createElement('div')
+    const skillsSection = document.createElement('div')
     skillsSection.className = 'skill-section-container'
     skillsSection.appendChild(skillsSectionTitle)
 
     resume['resume-body']['skills'].forEach(function(skill){
-        skillSubsectionTitle = document.createElement('div')
+        const skillSubsectionTitle = document.createElement('div')
         skillSubsectionTitle.className = "section-subtitle"
         skillSubsectionTitle.innerHTML = skill['skill-type']
         
-        skillSubsectionContainer = document.createElement('div')
+        const skillSubsectionContainer = document.createElement('div')
         skillSubsectionContainer.className = 'skill-subsection-container'
         skillSubsectionContainer.appendChild(skillSubsectionTitle)
 
-        var hlCollection = document.createElement('ul')
+        const hlCollection = document.createElement('ul')
         hlCollection.className = 'browser-default'
         skill['skill-items'].forEach(function(skillItemHTML){
             var skillItem = document.createElement('li')
@@ -130,6 +130,7 @@ function createEducationSection(resume) {
         educationSubsectionTitle = document.createElement('div')
         educationSubsectionTitle.className = "section-subtitle"
         educationSubsectionTitle.innerHTML = `<span>${education['school-name']}</span>`
+        educationSubsectionTitle.style = "margin-bottom: 0.5rem"
 
         educationSubsectionTimeline = document.createElement('div')
         educationSubsectionTimeline.className = 'education-item-container'
