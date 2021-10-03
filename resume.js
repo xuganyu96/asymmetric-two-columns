@@ -62,7 +62,7 @@ resume = {
         ],
         "employments": [
             {
-                "title": "Data Engineer",
+                "title": "Software Engineer, Data Platform",
                 "timeline": "July, 2019 - Present",
                 "employer": "LeanTaaS Inc.",
                 "location": "Santa Clara, CA",
@@ -82,7 +82,6 @@ resume = {
                 "title": "Chives exchange",
                 "links": {
                     "github": "https://github.com/xuganyu96/chives-exchange",
-                    "aws": "http://chives-exchange.brucexu.live/auth/login",
                     "pypi": "https://pypi.org/project/chives-exchange/"
                 },
                 "tech-stack": ["Flask", "RabbitMQ", "MySQL", "Docker", "NginX", "ChartJS"],
