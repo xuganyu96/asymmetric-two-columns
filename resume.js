@@ -13,41 +13,44 @@ resume = {
     "resume-body": {
         "skills": [
             {
-                "skill-type": "Data engineering",
+                "skill-type": "ETL pipeline",
                 "skill-items": [
-                    "<b>Python</b>",
+                    "<b>Python 3</b>",
                     "<b>Apache Airflow</b>",
                     "<b>pandas</b>",
-                    "SQLAlchemy ORM",
-                    "Jupyter"
+                    "Big-data analytics with<br><b>S3 + Parquet + Athena</b>",
                 ]
             },
             {
                 "skill-type": "Cloud infrastructure",
                 "skill-items": [
-                    "<b>Docker</b>", 
-                    "AWS EC2, S3, ECS",
+                    "Amazon web services:<br>"
+                    + "<b>Elastic Container Service</b><br>" 
+                    + "<b>Fargate</b><br>"
+                    + "<b>Lambda</b><br>"
+                    + "<b>Simple Queuing Service</b><br>",
+                    "Containerization (Docker)",
                     "DataDog"
-                ]
-            },
-            {
-                "skill-type": "Database & DWH",
-                "skill-items": [
-                    "<b>AWS Athena</b>",
-                    "MySQL & PostgreSQL"
                 ]
             },
             {
                 "skill-type": "Web development",
                 "skill-items": [
-                    "Flask & Django",
-                    "HTML 5 & CSS 3",
-                    "JavaScript ES6",
-                    "UNIX shell scripting",
-                    "Linux (Debian, CentOS)",
-                    "RabbitMQ", 
-                    "NginX",
-                    "Go"
+                    "Web frameworks:<br>"
+                    + "<b>Flask</b>, Django</br>",
+                    "Relational databases:<br>"
+                    + "<b>MySQL, PostgreSQL</b><br>"
+                    + "SQLAlchemy",
+                    "HTML, CSS, JavaScript"
+                ]
+            },
+            {
+                "skill-type": "Miscellaneous",
+                "skill-items": [
+                    "C language",
+                    "Golang",
+                    "Shell scripting",
+                    "Vim"
                 ]
             }
         ],
