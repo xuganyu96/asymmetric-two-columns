@@ -45,9 +45,12 @@ resume = {
             {
                 "skill-type": "Miscellaneous",
                 "skill-items": [
-                    "C, Go",
+                    "Jupyter Notebook",
+                    "matplotlib",
+                    "C, Go, R",
                     "Shell scripting",
-                    "Vim"
+                    "Vim, tmux",
+                    "Atlassian Cloud<br>(jira, bitbucket, etc.)"
                 ]
             }
         ],
@@ -70,7 +73,7 @@ resume = {
                     // WakeMed ~600k, Woman's Hospital ~180K, Mount Nittany ~387k
                     "<b>Converted $1.1M+ contract into annual revenue</b> by implementing ETL pipeline from EHR backend database to internal analytics warehouse",
                     // Athena
-                    "<b>Scaled raw data ingestation throughput</b> by migrating data storage from PostgreSQL to Apache Parquet on AWS S3 and AWS Athena",
+                    "<b>Scaled raw data ingestion throughput</b> by migrating data storage from PostgreSQL to Apache Parquet on AWS S3 and AWS Athena",
                     // File validation worker
                     "<b>Shortened ETL implementation process from 12 to 4 weeks</b> by building scalable backend microservice that automates data schema validation",
                     // Branch build
@@ -78,11 +81,11 @@ resume = {
                     // Unit testing
                     "<b>Automated unit testing</b> by integrating pytest into deployment pipeline",
                     // DataDog for Airflow monitoring
-                    "<b>Increased on-demand ETL service availability</b> by implementing service availability monitoring (DataDog) and engineer on-call alarms (PagerDuty)",
+                    "<b>Increased ETL pipeline uptime</b> by implementing service availability monitoring via DataDog and engineer on-call alarms on PagerDuty",
                     // Epic block utilization, CHS PICIS R&D, Meditech Expanse R&D
-                    "<b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendorts such as Epic, Meditech, and Picis",
+                    "<b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendors and industry incumbents such as Epic, Cerner, Meditech, and Picis",
                     // Managerial achievements
-                    "Led a team of 8+ data engineers, providing mentorship for junior members while carrying out product vision from business and engineering leadership"
+                    "Led a team of 8+ data engineers/analysts, recruited and mentored junior teammates, carried out product vision from business and engineering leaders"
                 ]
             }
         ],
@@ -96,7 +99,7 @@ resume = {
                 "tech-stack": ["AWS ECS/Fargate", "Apache Airflow"],
                 "highlights": [
                     "Reduced server maintenance overhead and monetary cost from idle worker instances by leveraging serverless container deployment on AWS Fargate",
-                    "Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling solution, such as with the Celery Executor"
+                    "Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling solution, such as with the popular choice of Celery Executor"
                 ]
             },
             {
@@ -107,8 +110,10 @@ resume = {
                 },
                 "tech-stack": ["Flask", "RabbitMQ", "MySQL", "Docker", "NginX", "ChartJS"],
                 "highlights": [
-                    "Implemented stateless order matching engine that receives orders from RabbitMQ and writes transactions to SQL database",
-                    "Implemented web UI using Flask, featuring simple user authentication, simulated stock trading, and market information with interactive stock chart",
+                    "Simulated order matching algorithms that pair stock orders and execute trade",
+                    "Leveraged relational constraints in data model to resolve race conditions and achieve horizontal scalability for the order matching algorithm",
+                    "Implemented web client (Flask) featuring simple user authentication, simulated stock trading, and market data visualization (ChartJS)",
+                    "Published to AWS on EC2 behind load balancer under personal domain"
                 ]
             },
             // {
