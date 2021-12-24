@@ -11,11 +11,281 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <title>Hello, world!</title>
+    <title>Ganyu Xu</title>
+    <style>
+      .small {
+        font-size: 12px;
+      }
+
+      hr {
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- The resume -->
+    <section class="py-1">
+      <div class="container">
+        <!-- Resume header -->
+      <div class="container">
+        <div class="row">
+          <!-- Name -->
+          <div class="col-8">
+            <div><h2>Ganyu Xu</h2></div>
+            <div><span class="fs-5 text-secondary">Software engineer</span></div>
+          </div>
+          <!-- Contact -->
+          <div class="col-4">
+            <ul class="list-unstyled text-end small">
+              <li>
+                <a 
+                  class="text-decoration-none d-flex justify-content-start" 
+                  href="tel:6263278890">
+                  <i class="me-2 bi bi-telephone"></i>
+                  626-327-8890
+                </a>
+              </li>
+              <li>
+                <a 
+                  class="text-decoration-none d-flex justify-content-start" 
+                  href="mailto:xuganyu96@gmail.com">
+                  <i class="me-2 bi bi-envelope"></i>
+                  xuganyu96@gmail.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  class="text-decoration-none d-flex justify-content-start" 
+                  href="https://github.com/xuganyu96">
+                  <i class="me-2 bi bi-github"></i>
+                  /xuganyu96
+                </a>
+              </li>
+              <li>
+                <a 
+                  class="text-decoration-none d-flex justify-content-start" 
+                  href="https://www.linkedin.com/in/ganyu-bruce-xu/">
+                  <i class="me-2 bi bi-linkedin"></i>
+                  /in/ganyu-bruce-xu
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- resume body -->
+      <div class="container">
+        <div class="row">
+          <!-- Minor section -->
+          <div class="col-4">
+            <!-- skills -->
+            <div>
+              <h4>Skills</h4>
+              <div>
+                <h6>ETL pipeline</h6>
+                <ul class="small">
+                  <li>
+                    <strong>Python 3</strong>
+                  </li>
+                  <li>
+                    <strong>Apache Airflow</strong>
+                  </li>
+                  <li>
+                    <strong>pandas</strong>
+                  </li>
+                  <li>
+                    Data warehousing with <br>
+                    <strong>S3 + Parquet + Athena</strong>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6>Cloud infrastructure</h6>
+                <ul class="small">
+                  <li>
+                    Amazon web services: <br>
+                    <strong>Elastic Container Service</strong><br>
+                    <strong>Fargate</strong><br>
+                    <strong>Lambda</strong><br>
+                    <strong>Simple Queuing Service</strong>
+                  </li>
+                  <li>Docker container</li>
+                  <li>DataDog</li>
+                </ul>
+              </div>
+              <div>
+                <h6>Web development</h6>
+                <ul class="small">
+                  <li><strong>Flask</strong></li>
+                  <li><strong>MySQL, PostgreSQL</strong></li>
+                  <li>SQLAlchemy</li>
+                  <li>HTML, CSS, JavaScript</li>
+                </ul>
+              </div>
+              <div>
+                <h6>Miscellaneous</h6>
+                <ul class="small">
+                  <li>Jupyter Notebook</li>
+                  <li>matplotlib</li>
+                  <li>C, Go, R</li>
+                  <li>Shell scripting</li>
+                  <li>vim, tmux, git</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- education -->
+            <div>
+              <h4>Education</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <h6>UC Berkeley</h6>                  
+                </li>
+                <li>
+                  <span class="text-secondary small">Aug, 2015 - May, 2019</span>
+                </li>
+                <li>
+                  <span class="text-secondary small">B.A. Mathematics</span>
+                </li>
+                <li>
+                  <span class="text-secondary small">B.A. Statistics</span>
+                </li>
+                <li>
+                  <span class="text-secondary small">GPA 3.464</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main section -->
+          <div class="col-8">
+            <div>
+              <h4>Professional Experience</h4>
+              <div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <div>
+                      <div class="d-flex small justify-content-between align-items-center">
+                        <h6>Software engineer, data platform</h6>
+                        <span class="text-secondary">July, 2019 - present</span>
+                      </div>
+                      <div class="d-flex small justify-content-between">
+                        <span class="text-secondary">LeanTaaS Inc.</span>
+                        <span class="text-secondary">Santa Clara, CA</span>
+                      </div>
+                      <div>
+                        <ul class="small">
+                          <li>
+                            <strong>Converted $1.1M+ contract into annual revenue</strong> by implementing ETL pipeline from EHR backend database to internal analytics warehouse
+                          </li>
+                          <li>
+                            <strong>Scaled raw data ingestion throughput</strong> by migrating data storage from PostgreSQL to Apache Parquet on AWS S3 and AWS Athena
+                          </li>
+                          <li>
+                            <strong>Shortened ETL implementation process from 12 to 4 weeks</strong> by building scalable backend microservice that automates data schema validation
+                          </li>
+                          <li>
+                            <strong>Expanded regression testing infrastructure</strong> by migrating testing environment from a single EC2 instance to container clusters on AWS ECS
+                          </li>
+                          <li>
+                            <strong>Automated unit testing</strong> by integrating pytest into deployment pipeline
+                          </li>
+                          <li>
+                            <strong>Increased ETL pipeline uptime</strong> by implementing service availability monitoring via DataDog and engineer on-call alarms on PagerDuty
+                          </li>
+                          <li>
+                            <strong>Reverse-engineered proprietary analytics/operational features</strong> from EHR vendors and industry incumbents such as Epic, Cerner, Meditech, and Picis
+                          </li>
+                          <li>
+                            Led a team of 8+ data engineers/analysts, recruited and mentored junior teammates, carried out product vision from business and engineering leaders
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Achievements & projects -->
+            <div>
+              <h4>Software engineering projects</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <div class="d-flex justify-content-between">
+                    <h6>AWS ECS/Fargate Executor for Apache Airflow</h6>
+                    <div>
+                      <a href="https://github.com/aelzeiny/airflow-aws-executors">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="small">
+                    <li>
+                      Reduced server maintenance overhead and monetary cost from idle worker instances by leveraging serverless container deployment on AWS Fargate
+                    </li>
+                    <li>
+                      Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling solution, such as with the popular choice of Celery Executor
+                    </li>
+                  </ul>
+                </li>
+                <li class="mb-2">
+                  <div class="d-flex justify-content-between">
+                    <h6>Chives exchange
+                    </h6>
+                    <div>
+                      <a href="https://github.com/xuganyu96/chives-exchange">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="small">
+                    <li>
+                      Simulated order matching algorithms that pair stock orders and execute trade
+                    </li>
+                    <li>
+                      Leveraged relational constraints in data model to resolve race conditions and achieve horizontal scalability for the order matching algorithm
+                    </li>
+                    <li>
+                      Implemented web client (Flask) featuring simple user authentication, simulated stock trading, and market data visualization (ChartJS)
+                    </li>
+                    <li>
+                      Published to AWS on EC2 with self-hosted MySQL, NginX, and RabbitMQ; traffic routed under personal domain (GoDaddy) through AWS Route53
+                    </li>
+                  </ul>
+                </li>
+                <li class="mb-2">
+                  <div class="d-flex justify-content-between">
+                    <h6>Simple resume generator</h6>
+                    <div>
+                      <a href="https://github.com/xuganyu96/simple-resume-generator">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="small">
+                    <li>
+                      A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a single-page application design
+                    </li>
+                    <li>
+                      This resume you are reading was created using this project, with a single HTML page that loads the rendering app and content from GitHub Pages
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
 
     <!-- Bootstrap JS -->
