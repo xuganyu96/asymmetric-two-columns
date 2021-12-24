@@ -1,0 +1,437 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.0rem;
+    }
+
+    i {
+      font-size: 1.4rem;
+    }
+
+    p {
+      line-height: 1.4;
+      margin-block-start: 0rem;
+      margin-block-end: 0rem;
+    }
+
+    ul {
+      margin-block-start: 0rem;
+      margin-block-end: 0rem;
+      padding-inline-start: 1.6rem;
+    }
+
+    li {
+      margin-block-end: 0.2rem;
+    }
+
+    .resume-container {
+      margin: 0rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0rem;
+    }
+
+    .resume-header-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #cccccc;
+      padding-bottom: 10px;
+    }
+
+    .contact-anchor {
+      display: flex;
+      align-items: center;
+    }
+
+    .resume-body-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      /* padding-top: 8px; */
+    }
+
+    .side-section-container {
+      display: flex;
+      flex-direction: column;
+      width: 28%;
+      border-right: 2px solid #cccccc;
+    }
+
+    .skill-section-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem;
+      border-bottom: 2px solid #cccccc;
+    }
+
+    .skill-subsection-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    .education-section-container {
+      padding: 0.7rem;
+    }
+
+    .education-subsection-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .education-item-container {
+      margin-bottom: 0.2rem;
+    }
+
+    .main-section-container {
+      display: flex;
+      flex-direction: column;
+      width: 73%;
+    }
+
+    .employment-section-container {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 2px solid #cccccc;
+      padding: 0.7rem 1.3rem;
+      width: 100%;
+    }
+
+    .project-section-container {
+      padding: 0.7rem 1.3rem;
+    }
+
+    .employment-subsection-container,
+    .project-subsection-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .employment-highlight-container,
+    .project-highlight-container {
+      display: flex;
+      flex-direction: column;
+      line-height: 1rem;
+    }
+
+    .highlight-item {
+      margin-block-end: 0.5rem
+    }
+
+    .title-timeline-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-filler {
+      display: flex;
+      flex-direction: column;
+      width: 12rem;
+    }
+
+    .full-name-container {
+      display: flex;
+      flex-grow: 2;
+      flex-direction: column;
+      padding-left: 0.7rem;
+      align-items: start;
+      justify-self: center;
+      justify-content: center;
+      width: 30rem;
+    }
+
+    .full-name-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .full-name-secondary {
+      font-size: 1.5rem;
+      color: #666
+    }
+
+    .contact-info {
+      padding-top: 10px;
+      padding-left: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+    }
+
+    .contact-info-item {
+      margin: 0.2rem 0rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .section-secondary {
+      font-size: 1rem;
+      color: #666;
+      align-items: center;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px 0rem;
+    }
+
+    .tech-item {
+      display: flex;
+      align-items: center;
+      height: 1.6rem;
+      border-radius: 0.8rem;
+      /* border-radius is half of height */
+      margin: 0px 3px;
+      padding: 1px 10px;
+      background: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="resume-container" style="width: 58rem;">
+    <div class="resume-header-container">
+      <!-- <div class="header-filler">
+      </div> -->
+      <div class="full-name-container">
+        <div class="full-name-title">
+          Ganyu (Bruce) Xu
+        </div>
+        <div class="full-name-secondary">
+          Software Engineer, Data Platform
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <a class="contact-anchor" href="mailto:xuganyu96@gmail.com">
+            <i class="far fa-envelope"></i>
+            <span>xuganyu96@gmail.com</span>
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <a class="contact-anchor" href="tel:+1-626-327-8890">
+            <i class="far fa-phone"></i>
+            <span>+1-626-327-8890</span>
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <a class="contact-anchor" href="https://www.linkedin.com/in/ganyu-bruce-xu/">
+            <i class="fab fa-linkedin"></i>
+            <span>/in/ganyu-bruce-xu/</span>
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <a class="contact-anchor" href="https://xuganyu96.github.io">
+            <i class="fab fa-github"></i><span>xuganyu96</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="resume-body-container">
+      <div class="side-section-container">
+        <div class="skill-section-container">
+          <div class="section-title">Skills</div>
+          <div class="skill-subsection-container">
+            <div class="section-subtitle">ETL pipeline</div>
+          </div>
+          <ul class="browser-default">
+            <li><b>Python 3</b></li>
+            <li><b>Apache Airflow</b></li>
+            <li><b>pandas</b></li>
+            <li>Data warehousing with<br><b>S3 + Parquet + Athena</b></li>
+          </ul>
+          <div class="skill-subsection-container">
+            <div class="section-subtitle">Cloud infrastructure</div>
+          </div>
+          <ul class="browser-default">
+            <li>Amazon web services:<br><b>Elastic Container Service</b><br><b>Fargate</b><br><b>Lambda</b><br><b>Simple
+                Queuing Service</b><br></li>
+            <li>Containerization (Docker)</li>
+            <li>DataDog</li>
+          </ul>
+          <div class="skill-subsection-container">
+            <div class="section-subtitle">Web development</div>
+          </div>
+          <ul class="browser-default">
+            <li><b>Flask</b></li>
+            <li><b>MySQL, PostgreSQL</b><br></li>
+            <li>SQLAlchemy</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+          <div class="skill-subsection-container">
+            <div class="section-subtitle">Miscellaneous</div>
+          </div>
+          <ul class="browser-default">
+            <li>Jupyter Notebook</li>
+            <li>matplotlib</li>
+            <li>C, Go, R</li>
+            <li>Shell scripting</li>
+            <li>Vim, tmux</li>
+            <li>Atlassian Cloud<br>(jira, bitbucket, etc.)</li>
+          </ul>
+        </div>
+        <div class="education-section-container">
+          <div class="section-title">Education</div>
+          <div class="education-subsection-container">
+            <div class="section-subtitle" style="margin-bottom: 0.5rem;"><span>UC Berkeley</span></div>
+            <div class="education-item-container"><span>Aug 2015 - May 2019</span></div>
+            <div class="education-item-container"><span>B.A. Mathematics</span></div>
+            <div class="education-item-container"><span>B.A. Statistics</span></div>
+            <div class="education-item-container"><span>GPA 3.464</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section-container">
+        <div class="employment-section-container">
+          <div class="section-title">Professional Experience</div>
+          <div class="employment-subsection-container">
+            <div class="title-timeline-container">
+              <div class="section-subtitle" style="flex-grow: 1;">Software Engineer, Data Platform</div>
+              <div>July, 2019 - Present</div>
+            </div>
+            <div class="section-secondary" style="display: flex;">
+              <div style="flex-grow: 1;">LeanTaaS Inc.</div>
+              <div style="margin-bottom: 0.5rem;">Santa Clara, CA</div>
+            </div>
+            <div class="employment-highlight-container">
+              <ul class="browser-default">
+                <li class="highlight-item">
+                  <p><b>Converted $1.1M+ contract into annual revenue</b> by implementing ETL pipeline from EHR backend
+                    database to internal analytics warehouse</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Scaled raw data ingestion throughput</b> by migrating data storage from PostgreSQL to Apache
+                    Parquet on AWS S3 and AWS Athena</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Shortened ETL implementation process from 12 to 4 weeks</b> by building scalable backend
+                    microservice that automates data schema validation</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Expanded regression testing infrastructure</b> by migrating testing environment from a single
+                    EC2 instance to container clusters on AWS ECS</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Automated unit testing</b> by integrating pytest into deployment pipeline</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Increased ETL pipeline uptime</b> by implementing service availability monitoring via DataDog
+                    and engineer on-call alarms on PagerDuty</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>Reverse-engineered proprietary analytics/operational features</b> from EHR vendors and industry
+                    incumbents such as Epic, Cerner, Meditech, and Picis</p>
+                </li>
+                <li class="highlight-item">
+                  <p>Led a team of 8+ data engineers/analysts, recruited and mentored junior teammates, carried out
+                    product vision from business and engineering leaders</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project-section-container">
+          <div class="section-title">Software Engineering Projects</div>
+          <div class="project-subsection-container">
+            <div style="display: flex;">
+              <div class="section-subtitle" style="flex-grow: 1; margin-bottom: 0.2rem;">AWS ECS/Fargate Executor for
+                Apache Airflow</div>
+              <div style="margin: 0rem 0.2rem;"><a href="https://github.com/aelzeiny/airflow-aws-executors"><i
+                    class="fab fa-github"></i></a></div>
+              <div style="margin: 0rem 0.2rem;"><a href="https://pypi.org/project/airflow-aws-executors/"><i
+                    class="fab fa-python"></i></a></div>
+            </div>
+            <div class="project-highlight-container">
+              <ul class="browser-default">
+                <li class="highlight-item">
+                  <p>Reduced server maintenance overhead and monetary cost from idle worker instances by leveraging
+                    serverless container deployment on AWS Fargate</p>
+                </li>
+                <li class="highlight-item">
+                  <p>Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling
+                    solution, such as with the popular choice of Celery Executor</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-subsection-container">
+            <div style="display: flex;">
+              <div class="section-subtitle" style="flex-grow: 1; margin-bottom: 0.2rem;">Chives exchange</div>
+              <div style="margin: 0rem 0.2rem;"><a href="https://github.com/xuganyu96/chives-exchange"><i
+                    class="fab fa-github"></i></a></div>
+              <div style="margin: 0rem 0.2rem;"><a href="https://pypi.org/project/chives-exchange/"><i
+                    class="fab fa-python"></i></a></div>
+            </div>
+            <div class="project-highlight-container">
+              <ul class="browser-default">
+                <li class="highlight-item">
+                  <p>Simulated order matching algorithms that pair stock orders and execute trade</p>
+                </li>
+                <li class="highlight-item">
+                  <p>Leveraged relational constraints in data model to resolve race conditions and achieve horizontal
+                    scalability for the order matching algorithm</p>
+                </li>
+                <li class="highlight-item">
+                  <p>Implemented web client (Flask) featuring simple user authentication, simulated stock trading, and
+                    market data visualization (ChartJS)</p>
+                </li>
+                <li class="highlight-item">
+                  <p>Published to AWS on EC2 with self-hosted MySQL, NginX, and RabbitMQ; traffic routed under personal
+                    domain (GoDaddy) through AWS Route53</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-subsection-container">
+            <div style="display: flex;">
+              <div class="section-subtitle" style="flex-grow: 1; margin-bottom: 0.2rem;">Simple resume generator</div>
+              <div style="margin: 0rem 0.2rem;"><a href="https://github.com/xuganyu96/simple-resume-generator"><i
+                    class="fab fa-github"></i></a></div>
+            </div>
+            <div class="project-highlight-container">
+              <ul class="browser-default">
+                <li class="highlight-item">
+                  <p>A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a
+                    single-page application design</p>
+                </li>
+                <li class="highlight-item">
+                  <p><b>This resume you are reading was created using this project</b>, with a single HTML page that
+                    loads the resume-rendering app and content from GitHub Pages</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
