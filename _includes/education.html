@@ -1,0 +1,17 @@
+<div>
+  <h4>Education</h4>
+  <ul class="list-unstyled">
+    {% for e in resume.education %}
+      <li class="mb-2">
+        <ul class="list-unstyled">
+          <li><h6 class="mb-0">{{ e.school }}</h6></li>
+          <li><span class="text-secondary small">{{ e.duration }}</span></li>
+          {% for d in e.degrees %}
+            <li><span class="text-secondary small">{{ d }}</span></li>
+          {% endfor %}
+          <li><span class="text-secondary small">GPA: {{ e.gpa }}</span></li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

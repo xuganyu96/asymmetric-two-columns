@@ -1,0 +1,28 @@
+<div>
+  <h4>Professional Experience</h4>
+  <div>
+    <ul class="list-unstyled">
+      {% for exp in resume.experiences %}
+        <li class="mb-2">
+          <div class="d-flex small justify-content-between align-items-center">
+            <h6>{{ exp.title }}</h6>
+            <span class="text-secondary">{{ exp.duration }}</span>
+          </div>
+          <div class="d-flex small justify-content-between">
+            <span class="text-secondary">{{ exp.employer }}</span>
+            <span class="text-secondary">{{ exp.location }}</span>
+          </div>
+          <div>
+            <ul class="small">
+              {% for highlight in exp.highlights %}
+                <li>
+                  {{ highlight }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

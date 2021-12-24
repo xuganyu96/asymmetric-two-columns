@@ -1,0 +1,24 @@
+<div>
+  <h4>Software engineering projects</h4>
+  <ul class="list-unstyled">
+    {% for project in resume.projects %}
+      <li class="mb-2">
+        <div class="d-flex justify-content-between">
+          <h6>{{ project.title }}</h6>
+          <div>
+            <a href="{{ project.url }}">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="small">
+          {% for highlight in project.highlights %}
+            <li>
+              {{ highlight }}
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+<div>
+  <h4>Skills</h4>
+  {% for cluster in resume.skills %}
+  <div>
+    <h6>{{ cluster.title }}</h6>
+    <ul class="small mb-3">
+      {% for member in cluster.members %}
+        <li>
+          {% if member.important %}
+            <strong>{{ member.text }}</strong>
+          {% else %}
+            {{ member.text }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
