@@ -14,6 +14,12 @@
     rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-  <title>{{ site.title }}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
   <link rel="stylesheet" href="{{ 'assets/style.css' | relative_url }}">
 </head>
