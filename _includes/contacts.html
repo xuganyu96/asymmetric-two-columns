@@ -1,14 +1,12 @@
-<div class="col-4">
-  <ul class="list-unstyled text-end small">
-    {% for contact in resume.contacts %}
-      <li>
-        <a 
-          class="text-decoration-none"
-          href="{{ contact.href }}">
-          <i class="me-2 bi {{ contact.bi-icon }}"></i>
-          {{ contact.text }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="list-unstyled">
+  {% for contact in resume.contacts %}
+    <li class="mb-2">
+      <a 
+        class="text-decoration-none text-secondary"
+        href="{{ contact.href }}">
+        <i class="me-2 bi {{ contact.bi-icon }}"></i>
+        {{ contact.text }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -10,30 +10,26 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <!-- The resume -->
-    <section class="py-1">
+    <section class="py-2">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-sm-12">
-            <!-- resume-header -->
-            <div class="container">
-              <div class="row">
-                {% include name.html %}
-                {% include contacts.html %}
-              </div>
-            </div>
-            <hr>
-            <!-- resume body -->
+          <div class="col-lg-10 col-12">
             <div class="container">
               <div class="row">
                 <!-- Minor section -->
-                <div class="col-3">
+                <div class="col-print-4 col-lg-4 col-12">
+                  {% include name.html %}
+                  <hr>
+                  {% include contacts.html %}
+                  <hr>
                   {% include skills.html %}
+                  <hr>
                   {% include education.html %}
                 </div>
                 <!-- Main section -->
-                <div class="col-9">
+                <div class="col-print-8 col-lg-8 col-12">
                   {% include experiences.html %}
+                  <hr>
                   {% include projects.html %}
                 </div>
               </div>

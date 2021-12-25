@@ -1,7 +1,39 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 hr {
     margin: 10px 0;
 }
 
 .small {
+    font-size: 0.875rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+/* 
+ * Letter size actually corresponds to a size that is smaller than extra-small
+ * in Bootstrap (in terms of pixel count, since standard printing is done with
+ * 72 dpi)
+ * 
+ * These classes are added to columns so that a specific layout can be enforced
+ * when printing instead defaulting to the xs setting
+ */
+@media print {
+  .col-print-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+  }
+
+  .col-print-8 {
+    flex: 0 0 auto;
+    width: 66.66666666%;
+  }
+
+  .small {
     font-size: 12px;
+  }
 }
