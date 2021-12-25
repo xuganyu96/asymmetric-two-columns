@@ -1,8 +1,8 @@
-<ul class="list-unstyled text-end small">
+<ul class="list-unstyled">
   {% for contact in resume.contacts %}
-    <li>
+    <li class="mb-2">
       <a 
-        class="text-decoration-none"
+        class="text-decoration-none text-secondary"
         href="{{ contact.href }}">
         <i class="me-2 bi {{ contact.bi-icon }}"></i>
         {{ contact.text }}

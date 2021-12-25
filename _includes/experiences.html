@@ -5,17 +5,17 @@
       {% for exp in resume.experiences %}
         <li class="mb-2">
           <div class="d-flex small justify-content-between align-items-center">
-            <h6>{{ exp.title }}</h6>
+            <span class="fs-6">{{ exp.title }}</span>
             <span class="text-secondary">{{ exp.duration }}</span>
           </div>
-          <div class="d-flex small justify-content-between">
+          <div class="d-flex small justify-content-between mb-2">
             <span class="text-secondary">{{ exp.employer }}</span>
             <span class="text-secondary">{{ exp.location }}</span>
           </div>
           <div>
             <ul class="small">
               {% for highlight in exp.highlights %}
-                <li>
+                <li class="mb-1">
                   {{ highlight }}
                 </li>
               {% endfor %}
