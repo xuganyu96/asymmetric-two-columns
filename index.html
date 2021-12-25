@@ -1,83 +1,106 @@
 ---
 layout: a2c
-title: Ganyu Xu's title
+title: Sample resume
 resume:
-  name: Ganyu Xu
-  title: Software engineer
+  name: Name
+  title: Title
   contacts:
-    - href: "tel:6262378890"
+    - href: "tel:1234567890"
       bi-icon: bi-telephone
-      text: "626-327-8890"
-    - href: "mailto:xuganyu96@gmail.com"
+      text: "123-456-7890"
+    - href: "mailto:sample@email.com"
       bi-icon: bi-envelope
-      text: "xuganyu96@gmail.com"
-    - href: "https://github.com/xuganyu96"
+      text: "sample@email.com"
+    - href: "https://github.com/github-username"
       bi-icon: bi-github
-      text: "xuganyu96"
-    - href: "https://linkedin.com/in/ganyu-bruce-xu"
+      text: "github-username"
+    - href: "https://linkedin.com/in/linkedin-username"
       bi-icon: bi-linkedin
-      text: "/in/ganyu-bruce-xu"
+      text: "/in/linkedin-username"
   skills:
-    - <span class="fs-6">Python 3</span>
-    - <span class="fs-6">ETL pipeline</span><br>
-      pandas <br>
-      Apache Airflow <br>
-      Parquet on S3 + Athena
-    - <span class="fs-6">Amazon Web Services</span><br>
-      EC2 <br>
-      ECS on Fargate <br>
-      SQS <br>
-      Lambda <br>
-    - <span class="fs-6">Docker container</span>
-    - <span class="fs-6">Web development</span><br>
-      Flask <br>
-      MySQL, PostgreSQL <br>
-      SQLAlchemy <br>
-      HTML 5, CSS 3 <br>
-      Bootstrap 5 <br>
-      Jekyll
+    - <span class="fs-6">Highlighted skill 1</span>
+    - <span class="fs-6">Highlighted skill 2</span><br>
+      new line <br>
+      new line <br>
+      new line <br>
+    - <span class="fs-6">Highlighted skill 3</span><br>
+      new line <br>
+      new line <br>
+      new line <br>
+      new line <br>
+    - <span class="fs-6">Highlighted skill 4</span>
+    - <span class="fs-6">Highlighted skill 5</span><br>
+      new line <br>
+      new line <br>
+      new line <br>
+      new line <br>
+      new line <br>
+      new line <br>
   education:
-    - school: "UC Berkeley"
-      duration: "Aug, 2015 - May, 2019"
+    - school: "School 1"
+      duration: "Duration"
       degrees:
+      - "B.A. Computer Science"
       - "B.A. Mathematics"
-      - "B.A. Statistics"
-      gpa: "3.464"
-    # - school: "Stanford University"
-    #   duration: "Aug, 2022 - May, 2024"
-    #   degrees:
-    #   - "M.S. Computer Science"
-    #   gpa: "3.0"
+      gpa: "4.000"
+    - school: "School 2"
+      duration: "Duration"
+      degrees:
+      - "M.S. Computer Science"
+      gpa: "4.000"
   experiences:
-    - title: "Software engineer, data platform"
-      duration: "July, 2019 - present"
-      employer: "LeanTaaS Inc."
-      location: "Santa Clara, CA"
+    - title: "Job title"
+      duration: "Job duration"
+      employer: "Employer name"
+      location: "Employer location"
       highlights:
-      - <strong>Converted $1.1M+ contract into annual revenue</strong> by implementing ETL pipeline from EHR backend database to internal analytics warehouse
-      - <strong>Scaled raw data ingestion throughput</strong> by migrating data storage from PostgreSQL to Apache Parquet on AWS S3 and AWS Athena
-      - <strong>Shortened ETL implementation process from 12 to 4 weeks</strong> by building scalable backend microservice that automates data schema validation
-      - <strong>Expanded regression testing infrastructure</strong> by migrating testing environment from a single EC2 instance to container clusters on AWS ECS
-      - <strong>Automated unit testing</strong> by integrating pytest into deployment pipeline
-      - <strong>Increased ETL pipeline uptime</strong> by implementing service availability monitoring via DataDog and engineer on-call alarms on PagerDuty
-      - <strong>Reverse-engineered proprietary analytics/operational features</strong> from EHR vendors and industry incumbents such as Epic, Cerner, Meditech, and Picis
-      - Led a team of 8+ data engineers/analysts, recruited and mentored junior teammates, carried out product vision from business and engineering leaders
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - Regular achievements in the job
+      - Regular achievements in the job
+    - title: "Job title"
+      duration: "Job duration"
+      employer: "Employer name"
+      location: "Employer location"
+      highlights:
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - Regular achievements in the job
+      - Regular achievements in the job
+    - title: "Job title"
+      duration: "Job duration"
+      employer: "Employer name"
+      location: "Employer location"
+      highlights:
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - <strong>Highlighted </strong> achievements in the job
+      - Regular achievements in the job
+      - Regular achievements in the job
   projects:
-    - title: AWS ECS/Fargate Executor for Apache Airflow
-      url: https://github.com/aelzeiny/airflow-aws-executors
+    - title: Project title
+      url: #!
       highlights:
-      - Reduced server maintenance overhead and monetary cost from idle worker instances by leveraging serverless container deployment on AWS Fargate
-      - Achieved superior parallelism for bursty workload compared to conventional EC2 auto-scaling solution, such as with the popular choice of Celery Executor
-    - title: Chives exchange
-      url: https://github.com/xuganyu96/chives-exchange
+      - project highlight
+      - <strong>Important</strong> project highlight
+    - title: Project title
+      url: #!
       highlights:
-      - Simulated order matching algorithms that pair stock orders and execute trade
-      - Leveraged relational constraints in data model to resolve race conditions and achieve horizontal scalability for the order matching algorithm
-      - Implemented web client (Flask) featuring simple user authentication, simulated stock trading, and market data visualization (ChartJS)
-      - Published to AWS on EC2 with self-hosted MySQL, NginX, and RabbitMQ; traffic routed under personal domain (GoDaddy) through AWS Route53
-    - title: Simple resume generator
-      url: https://github.com/xuganyu96/simple-resume-generator
+      - project highlight
+      - <strong>Important</strong> project highlight
+    - title: Project title
+      url: #!
       highlights:
-      - A fun learning experience for HTML/CSS Flexbox, DOM manipulation in plain JavaScript, and a single-page application design
-      - This resume you are reading was created using this project, with a single HTML page that loads the rendering app and content from GitHub Pages
+      - project highlight
+      - <strong>Important</strong> project highlight
+    - title: Project title
+      url: #!
+      highlights:
+      - project highlight
+      - <strong>Important</strong> project highlight
 ---
