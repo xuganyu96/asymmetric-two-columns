@@ -10,6 +10,10 @@ hr {
     font-size: 14px;
 }
 
+.text-primary {
+  color: black!important;
+}
+
 ul {
   padding-left: 1rem;
 }
