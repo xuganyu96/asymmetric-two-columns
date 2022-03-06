@@ -5,11 +5,13 @@
       <li class="mb-2">
         <div class="d-flex justify-content-between">
           <span class="fs-6">{{ project.title }}</span>
+          {% if project.url != null %}
           <div>
             <a href="{{ project.url }}">
               <i class="bi bi-github"></i>
             </a>
           </div>
+          {% endif %}
         </div>
         <ul class="small">
           {% for highlight in project.highlights %}
