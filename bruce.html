@@ -32,7 +32,7 @@ resume:
       <span class="text-secondary">CI/CD (CodeDeploy, Beanstalk)</span>
     - <span class="fs-6">Docker containers</span>
     - <span class="fs-6">Shell scripting</span>
-    - <span class="fs-6">Front-end development</span><br>
+    - <span class="fs-6">Web development</span><br>
       <span class="text-secondary">Flask, Django</span><br>
       <span class="text-secondary">JavaScript</span> <br>
       <span class="text-secondary">HTM, CSS, Bootstrap 5</span> <br>
@@ -45,33 +45,41 @@ resume:
       - "B.A. Mathematics"
       gpa: "3.464"
   experiences:
-    - title: "Software engineer, data"
+    - title: "Software engineer, data platform"
       duration: "July, 2019 - present"
       employer: "LeanTaaS Inc."
       location: "Santa Clara, CA"
       highlights:
-      - Customer onboarding
-      - Data platform's infrastructure (Airflow, Docker, Athena, DataDog)
-      - Data-driven products (IT Portal, Epic slot matching)
-      - Developer tools (containerized development environment)
-      - Soft skills (managing junior developers, recruiting)
+      - <b>Automated business analytics and legacy manual workflow</b> for operioperative management in 100+ healthcare systems throughout the US
+      - <b>Improved ETL pipeline scalability</b> by migrating data ingestion from PostgreSQL to AWS S3 and moving Airflow's workers to AWS ECS + Fargate
+      - <b>Accelerated enterprise customer onboarding</b> by automating labor-intensive tasks and cutting onboarding timeline from 4 months to 1 month
+      - <b>Increased developer productivity</b> by containerizing development environment, building unit testing framework, and integrating CI/CD practices
+      - <b>Reduced data-related production incidents and pipeline downtime</b> by implementing service availability monitoring and engineer on-call alarms via DataDog
+      - <b>Led a team of 7 software engineers</b> and mentored several junior developers through project design and implementation review and technical workshops
   projects:
-    - title: AWS Certified Developer - Associate
-      highlights:
-      - Achieved in February, 2022
-    - title: Asymmetric two columns (A2C)
-      url: https://github.com/xuganyu96/asymmetric-two-columns
-      highlights:
-      - A2C is a Jekyll theme 
-      - <strong>Important</strong> project highlight
+    - title: AWS Certified Developer - Associate (Feb, 2022)
     - title: Airflow AWS Executors
       url: https://github.com/aelzeiny/airflow-aws-executors
       highlights:
-      - project highlight
-      - <strong>Important</strong> project highlight
+      - <b>Reduced computing infrastructure maintenance overhead</b> by hosting Airflow workers as serverless containers on AWS Fargate
+      - <b>Improved Airflow infrastructure stability</b> by logically separating Airflow worker nodes and preventing corrupted tasks from crashing the entire cluster
     - title: Athena Ballerina
       url: https://github.com/leantaas/athena-ballerina
       highlights:
-      - project highlight
-      - <strong>Important</strong> project highlight
+      - Incremental and stateful schema migration for AWS Athena
+    - title: Dropshots
+      url: https://github.com/xuganyu96/dropshots
+      highlights:
+      - Modernized user experience in badminton gyms by moving the point of interface from offline terminals to a web app hosted on AWS
+    - title: Chives exchange
+      url: https://github.com/xuganyu96/chives-exchange
+      highlights:
+      - Distributed order matching engine implemented in Python
+      - Minimalist web GUI built on Material Design
+      - Responsive stock chart rendered using ChartJS
+    - title: Asymmetric two columns (A2C)
+      url: https://github.com/xuganyu96/asymmetric-two-columns
+      highlights:
+      - Asbtracted resume format and styling into a Jekyll theme built on Bootstrap 5
+      - <strong>This resume you are reading</strong> is built using A2C
 ---
