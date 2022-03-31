@@ -14,6 +14,10 @@ hr {
   color: black!important;
 }
 
+.text-secondary {
+  line-height: 2;
+}
+
 ul {
   padding-left: 1rem;
 }
