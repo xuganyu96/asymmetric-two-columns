@@ -18,6 +18,7 @@ resume:
       bi-icon: bi-linkedin
       text: "/in/ganyu-bruce-xu"
   skills:
+    - <span class="fs-6">Rust</span><br>
     - <span class="fs-6">Python 3</span><br>
       <span class="text-secondary">pandas</span> <br>
       <span class="text-secondary">SQLAlchemy ORM</span> <br>
@@ -34,8 +35,7 @@ resume:
     - <span class="fs-6">Shell scripting</span>
     - <span class="fs-6">Web development</span><br>
       <span class="text-secondary">Flask, Django</span><br>
-      <span class="text-secondary">JavaScript</span> <br>
-      <span class="text-secondary">HTM, CSS, Bootstrap 5</span> <br>
+      <span class="text-secondary">HTM, CSS, JS, Bootstrap 5</span> <br>
       <span class="text-secondary">Static site generation (Jekyll)</span>
   education:
     - school: "UC Berkeley"
@@ -46,7 +46,7 @@ resume:
       gpa: "3.464"
   experiences:
     - title: "Senior software engineer, data platform"
-      duration: "July, 2019 - present"
+      duration: "July, 2019 - Sept, 2023"
       employer: "LeanTaaS Inc."
       location: "Santa Clara, CA"
       highlights:
@@ -57,30 +57,24 @@ resume:
       - <b>Reduced data-related production incidents and pipeline downtime</b> by implementing service availability monitoring and engineer on-call alarms via DataDog
       - <b>Led a team of 7 software engineers</b> and mentored several junior developers through project design and implementation review and technical workshops
   projects:
-    - title: AWS Certified Developer - Associate (Feb, 2022)
+    - title: Apache Airflow
+      url: https://github.com/apache/airflow
+      highlights:
+      - "(PR #32707) Fixed improper multiprocessing exception handling that causes Airflow scheduler to become zombie while the scheduler health checks become unresponsive"
+      - "(PR #32385) Fixed incorrect DagRun list view serialization that causes the webapp to crash when DagRun config is not JSON-serializable"
+      - "(PR #31836) Implemented user-specified retries for 'airflow db check'"
+    - title: rustls
+      url: https://github.com/rustls/rustls
+      highlights:
+      - "(PR #1328) Identified Google's incorrect TLS termination procedure and fixed rustls' demo binaries to connect to other properly working TLS server"
+    - title: Flask-AppBuilder
+      url: https://github.com/dpgaspar/Flask-AppBuilder
+      highlights:
+      - "(PR #2071) Refactored logging infrastructure to use proper lazy logging"
     - title: PyAthena
       url: https://github.com/laughingman7743/PyAthena
       highlights:
-      - Contributed to PyAthena's 3.x release by maintaining backwards compatibility with SQLAlchemy 1.4 while adding support for SQLAlchemy 2.0
-    - title: Airflow AWS Executors
-      url: https://github.com/aelzeiny/airflow-aws-executors
-      highlights:
-      - <b>Reduced computing infrastructure maintenance overhead</b> by hosting Airflow workers as serverless containers on AWS Fargate
-      - <b>Improved Airflow infrastructure stability</b> by logically separating Airflow worker nodes and preventing corrupted tasks from crashing the entire cluster
-    - title: Athena Ballerina
-      url: https://github.com/leantaas/athena-ballerina
-      highlights:
-      - Incremental and stateful schema migration for AWS Athena
-    - title: Dropshots
-      url: https://github.com/xuganyu96/dropshots
-      highlights:
-      - Modernized user experience in badminton gyms by moving the point of interface from offline terminals to a web app hosted on AWS
-    - title: Chives exchange
-      url: https://github.com/xuganyu96/chives-exchange
-      highlights:
-      - Distributed order matching engine implemented in Python
-      - Minimalist web GUI built on Material Design
-      - Responsive stock chart rendered using ChartJS
+      - "(PR #446) Fixed improper eager type hints evaluation that breaks compatibility between PyAthena and newer versions of SQLAlchemy"
     - title: Asymmetric two columns (A2C)
       url: https://github.com/xuganyu96/asymmetric-two-columns
       highlights:
