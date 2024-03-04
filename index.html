@@ -46,7 +46,7 @@ resume:
       - "B.A. Mathematics"
       gpa: "3.464"
   experiences:
-    - title: "Senior software engineer, data platform"
+    - title: "Senior data engineer"
       duration: "July, 2019 - Sept, 2023"
       employer: "LeanTaaS Inc."
       location: "Santa Clara, CA"
@@ -57,19 +57,46 @@ resume:
       - <b>Increased developer productivity</b> by containerizing development environment, building unit testing framework, and integrating CI/CD practices
       - <b>Reduced pipeline downtime</b> by implementing service availability monitoring and engineer on-call alarms via DataDog
       - Recruited and mentored junior developers through project design review, pair programming, and technical workshops
-  projects:
     - title: RustCrypto
+      highlights:
+      - Implemented constant-time arithmetic for heap-allocated big integers in cryptographic bigint crate <strong>crypto-bigint</strong>
+      - Expanded prime generation for heap-allocated big integers in <strong>crypto-primes</strong>
+      - Automated side-channel vulnerability analysis in RSA implementation
+    - title: rustls
+      highlights:
+      - Identified incorrect TLS termination at google.com and fixed the example binaries to connect to other properly working TLS server
+    - title: Apache Airflow
+      highlights:
+      - Fixed improper exception handling in Python multiprocessing that causes the scheduler to become zombie instead of exiting
+      - "Fixed incorrect DagRun list view serialization that causes the webapp to crash when DagRun config is not JSON-serializable"
+      - Implemented user-specified retries for "airflow db check"
+    - title: Flask-AppBuilder
+      url: https://github.com/dpgaspar/Flask-AppBuilder
+      highlights:
+      - "Refactored logging infrastructure to use proper lazy logging"
+    - title: PyAthena
+      url: https://github.com/laughingman7743/PyAthena
+      highlights:
+      - Fixed compatibility issues between PyAthena and SQLAlchemy 1.4
+    - title: Asymmetric two columns (A2C)
+      url: https://github.com/xuganyu96/asymmetric-two-columns
+      highlights:
+      - Custom-built resume templates using Jekyll and Bootstrap 5
+      # - Asbtracted resume format and styling into a Jekyll theme built on Bootstrap 5
+      - <strong>This resume you are reading</strong> is built using A2C
+  projects:
+    - title: Mitigating timing-variability in RustCrypto/RSA
       url: https://github.com/RustCrypto
       highlights:
       - Implemented constant-time arithmetic for heap-allocated big integers in cryptographic bigint crate <strong>crypto-bigint</strong>
       - Expanded prime generation for heap-allocated big integers in <strong>crypto-primes</strong>
-      - Automated Marvin attack analysis in crate <storng>RustCrypto/RSA</storng>
+      - Automated Marvin attack analysis in crate <strong>RustCrypto/RSA</strong>
     - title: Apache Airflow
       url: https://github.com/apache/airflow
       highlights:
-      - "(PR #32707) Fixed improper multiprocessing exception handling that causes Airflow scheduler to become zombie while the scheduler health checks become unresponsive"
-      - "(PR #32385) Fixed incorrect DagRun list view serialization that causes the webapp to crash when DagRun config is not JSON-serializable"
-      - "(PR #31836) Implemented user-specified retries for 'airflow db check'"
+      - "Fixed improper multiprocessing exception handling that causes Airflow scheduler to become zombie while the scheduler health checks become unresponsive"
+      - "Fixed incorrect DagRun list view serialization that causes the webapp to crash when DagRun config is not JSON-serializable"
+      - "Implemented user-specified retries for \"airflow db check\""
     - title: rustls
       url: https://github.com/rustls/rustls
       highlights:

@@ -1,17 +1,21 @@
 <div>
-  <h4>Professional Experience</h4>
+  <h4>Software engineering experience</h4>
   <div>
     <ul class="list-unstyled">
       {% for exp in resume.experiences %}
         <li class="mb-2">
           <div class="d-flex small justify-content-between align-items-center">
-            <span class="fs-6">{{ exp.title }}</span>
+            <span class="fs-5">{{ exp.title }}</span>
+            {% if exp.duration %}
             <span class="text-secondary">{{ exp.duration }}</span>
+            {% endif %}
           </div>
-          <div class="d-flex small justify-content-between mb-2">
-            <span class="text-secondary">{{ exp.employer }}</span>
-            <span class="text-secondary">{{ exp.location }}</span>
-          </div>
+          {% if exp.employer and exp.location %}
+            <div class="d-flex small justify-content-between mb-2">
+              <span class="text-secondary">{{ exp.employer }}</span>
+              <span class="text-secondary">{{ exp.location }}</span>
+            </div>
+          {% endif %}
           <div>
             <ul class="small">
               {% for highlight in exp.highlights %}
