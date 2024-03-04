@@ -19,25 +19,26 @@ resume:
       text: "/in/ganyu-bruce-xu"
   skills:
     - <span class="fs-6">Rust</span><br>
+    - <span class="fs-6">Cryptography</span><br>
     - <span class="fs-6">Python 3</span><br>
-      <span class="text-secondary">pandas</span> <br>
-      <span class="text-secondary">SQLAlchemy ORM</span> <br>
-    - <span class="fs-6">Apache Airflow</span>
-    - <span class="fs-6">Amazon Web Services</span><br>
-      <span class="text-secondary">Compute (EC2, Lambda)</span> <br>
-      <span class="text-secondary">Storage (S3, EBS)</span> <br>
-      <span class="text-secondary">Container (ECS, Fargate)</span> <br>
-      <span class="text-secondary">Database (MySQL, PostgreSQL)</span> <br>
-      <span class="text-secondary">Analytics (Kinesis, Athena)</span> <br>
-      <span class="text-secondary">Security (KMS, Secrets Manager)</span> <br>
-      <span class="text-secondary">CI/CD (CodeDeploy, Beanstalk)</span>
-    - <span class="fs-6">Docker containers</span>
-    - <span class="fs-6">Shell scripting</span>
+    - <span class="fs-6">Data engineering</span><br>
+      <span class="text-secondary">Apache Airflow</span><br>
+      <span class="text-secondary">Relational database (SQL)</span><br>
+      <span class="text-secondary">AWS S3, Athena, RDS</span><br>
+    - <span class="fs-6">AWS Serverless Stack</span><br>
+      <span class="text-secondary">API Gateway, SQS, Lambda</span><br>
+      <span class="text-secondary">Elastic Container Service</span><br>
+    - <span class="fs-6">Linux server deployment</span><br>
+      <span class="text-secondary">Containerization, shell scripting</span><br>
+      <!-- <span class="text-secondary">Shell scripting</span><br> -->
     - <span class="fs-6">Web development</span><br>
       <span class="text-secondary">Flask, Django</span><br>
       <span class="text-secondary">HTM, CSS, JS, Bootstrap 5</span> <br>
-      <span class="text-secondary">Static site generation (Jekyll)</span>
   education:
+    - school: "University of Waterloo"
+      duration: "Sep, 2023 - Present"
+      degrees:
+      - "M.Eng. Electrical & Computer Engineering"
     - school: "UC Berkeley"
       duration: "Aug, 2015 - May, 2019"
       degrees:
@@ -51,18 +52,18 @@ resume:
       location: "Santa Clara, CA"
       highlights:
       - <b>Automated business analytics and legacy manual workflow</b> for operioperative management in 100+ healthcare systems throughout the US
-      - <b>Improved ETL pipeline scalability</b> by migrating data ingestion from PostgreSQL to AWS S3 and moving Airflow's workers to AWS ECS + Fargate
-      - <b>Accelerated enterprise customer onboarding</b> by automating labor-intensive tasks and cutting onboarding timeline from 4 months to 1 month
+      - <b>Improved ETL pipeline scalability</b> by migrating data ingestion from PostgreSQL to AWS S3 and moving Airflow's workers from EC2 to ECS
+      - <b>Accelerated enterprise customer onboarding</b> by automating manual data quality review, cutting onboarding timeline from 4 months to 1 month
       - <b>Increased developer productivity</b> by containerizing development environment, building unit testing framework, and integrating CI/CD practices
-      - <b>Reduced data-related production incidents and pipeline downtime</b> by implementing service availability monitoring and engineer on-call alarms via DataDog
-      - <b>Led a team of 7 software engineers</b> and mentored several junior developers through project design and implementation review and technical workshops
+      - <b>Reduced pipeline downtime</b> by implementing service availability monitoring and engineer on-call alarms via DataDog
+      - Recruited and mentored junior developers through project design review, pair programming, and technical workshops
   projects:
     - title: RustCrypto
       url: https://github.com/RustCrypto
       highlights:
       - Implemented constant-time arithmetic for heap-allocated big integers in cryptographic bigint crate <strong>crypto-bigint</strong>
       - Expanded prime generation for heap-allocated big integers in <strong>crypto-primes</strong>
-      # - Automated Marvin attack analysis in crate <storng>RustCrypto/RSA</storng>
+      - Automated Marvin attack analysis in crate <storng>RustCrypto/RSA</storng>
     - title: Apache Airflow
       url: https://github.com/apache/airflow
       highlights:

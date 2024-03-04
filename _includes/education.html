@@ -9,7 +9,9 @@
           {% for d in e.degrees %}
             <li><span class="text-secondary small">{{ d }}</span></li>
           {% endfor %}
-          <li><span class="text-secondary small">GPA: {{ e.gpa }}</span></li>
+          {% if e.gpa %}
+            <li><span class="text-secondary small">GPA: {{ e.gpa }}</span></li>
+          {% endif %}
         </ul>
       </li>
     {% endfor %}
